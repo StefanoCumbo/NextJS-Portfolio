@@ -1,29 +1,47 @@
 "use client";
-import {motion} from "framer-motion"
+import Brain from "@/components/brain";
+import {easeInOut, motion, useInView, useScroll} from "framer-motion"
+import {useRef} from "react"
 const AboutPage = () => {
+    const containerRef = useRef()
+    const {scrollYProgress} = useScroll({container: containerRef})
+
+    const skillRef = useRef()
+    const isSkillRefInView = useInView(skillRef , {once: true, margin: "-100px"})
+
+
     return ( 
-        <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}}  transition={{duration:1.5 }}>
+        <motion.div className="h-full"
+         initial={{y:"-200vh"}}
+         animate={{y:"0%"}}
+         transition={{duration:1.5 }}>
             
             {/* CONTAINER */}
-            <div className="h-full overflow-scroll lg:flex">
+            <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
                 {/* TEXT CONTAINER */}
-                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24  md:gap-32 lg:gap-48 xl:gap-64">
+                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24  md:gap-32 lg:gap-48 xl:gap-64 lg:p-0   lg:w-2/3 xl:w-1/2">
                     {/* BIOGRAOHY CONTAINER */}
                     <div className="flex flex-col gap-10 justify-center">
                         {/* TITLE */}
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
                         {/* DESCRIPTION */}
-                        <p className="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nesciunt facilis
-                            numquam obcaecati! Nihil porro magnam, quae voluptateaspernatur inventore autem impedit quam, suscipit, 
-                            est adipisci? Veritatis expedita numquam corporisvoluptates quo voluptatum possimus assumenda.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius sed odio fugiat quis neque corporis
-                             assumenda rerum officia quaerat dignissimos non veniam beatae qui, libero ex laudantium vero sequi.
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum at incidunt, possimus reiciendis exercitationem 
-                            natus blanditiis laboriosam facilis magnam numquam repellat officia quasi atque, facere saepe beatae doloribus quidem eligendi. 
-                            Sed quam a veniam deserunt quia cum mollitia necessitatibus similique
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt suscipit nisi earum et, laboriosam autem debitis porro consectetur ut repellendus quibusdam
-                             iure recusandae beatae aliquid itaque eius nobis minus accusantium perspiciatis assumenda ea nesciunt fuga obcaecati. Nesciunt sequi vero quaerat.
-                        </p>
+                        <p className="text-lg">
+    I am currently pursuing a four-year Master’s degree in Computer Science at the University of East Anglia, with a year-long exchange program at Deakin University in Melbourne, Australia. This experience has enriched my academic journey by exposing me to diverse learning environments and cultures, enhancing my adaptability and problem-solving skills.
+</p>
+
+<p className="text-lg">
+    I have a strong passion for web development, particularly in building innovative, user-centric applications. I am experienced in working with various web technologies, including Next.js, React.js, Typescript, and CSS, as well as back-end technologies like MongoDB and MySQL. My technical expertise is complemented by a keen interest in IoT, cloud computing, and data-driven solutions.
+</p>
+
+<p className="text-lg">
+    Throughout my studies and personal projects, I have honed my skills in software engineering, algorithm design, and systems integration. I have developed practical knowledge in integrating IoT devices with cloud-based platforms, as well as creating scalable, efficient solutions for real-world problems.
+</p>
+
+<p className="text-lg">
+    Throughout my studies and personal projects, I have developed a solid foundation in full-stack web development. My experience includes working on a range of projects such as a full-stack ecommerce store, a responsive portfolio website, and an AI-powered children's book generator. I have gained hands-on experience with React, MongoDB, Express.js, Node.js, and TypeScript, where I focused on building secure and scalable applications.
+</p>
+
+                       
 
                         {/* SIGNATURE */}
                         <div className="self-end">
@@ -34,7 +52,11 @@ const AboutPage = () => {
                         
                         </div>
                         {/* BIOGRAPHY SCROLL */}
-                        <svg
+                        <motion.svg
+
+                            initial={{opacity: 0.2, y: 0}}
+                            animate={{opacity: 1, y: "10px"}}
+                            transition={{repeat: Infinity, duration:3, ease:"easeInOut"}}
                             
                             viewBox="0 0 24 24"
                             fill="none"
@@ -52,14 +74,16 @@ const AboutPage = () => {
                                 stroke="#000000"
                                 strokeWidth="1"
                             ></path>
-                        </svg>
+                        </motion.svg>
                     </div>
                     {/* SKILLS CONTAINER */}
-                    <div className="flex flex-col gap-12 justify-center">
+                    <div className="flex flex-col gap-12 justify-center " ref={skillRef}>
                         {/* SKILLS TITLE */}
-                        <h1 className="font-bold text-2xl">SKILLS</h1>
+                        <motion.h1 initial={{x: "-300px"}} animate={isSkillRefInView ? {x: "0"} : {x:"-300"}} className="font-bold text-2xl">SKILLS</motion.h1>
+
                         {/* SKILL LIST */}
-                        <div className="flex gap-4 flex-wrap ">
+                        <motion.div initial={{x: "-300px"}} animate={isSkillRefInView ? {x: "0"} : {x:"-300"}}
+                         className="flex gap-4 flex-wrap pb-40 ">
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Javascript </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">TypeScript </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">React.js </div>
@@ -77,158 +101,23 @@ const AboutPage = () => {
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">PostreSQL </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">mySQL </div>
 
-                        </div>
+                        </motion.div>
                         
 
 
                        
                        
-                        {/* SKILL SCROLL SVG */}
-                        <svg
-                            initial={{ opacity: 0.2, y: 0 }}
-                            animate={{ opacity: 1, y: "10px" }}
-                            transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={50}
-                            height={50}>
-                            <path
-                                d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                                stroke="#000000"
-                                strokeWidth="1"
-                            />
-                            <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
-                            <path
-                                d="M15 11L12 14L9 11"
-                                stroke="#000000"
-                                strokeWidth="1"
-                            ></path>
-                        </svg>
+                       
                         
                         
                     </div>
                     {/* EXPERIENCE CONTAINER */}
-                    <div className=" flex flex-col gap-10 justify-center pb-48">
-                        <h1 className="font-bold text-2xl">EXPERIENCE</h1>
-                        <div className="flex justify-between h-48">
-                            {/* LIST ITEMS */}
-                            <div>
-                                {/* LEFT */}
-                                <div className="w-1/3 bg-green-300">
-                                    <div>
-                                        Junior Software Developer 
-                                    </div>
-                                    <div>
-                                        My Current employment. Way better than the position before 
-                                    </div>
-                                    <div>
-                                        2024- Present
-                                    </div>
-                                    
-
-                                </div>
-                                {/* CENTRE */}
-                                <div className="w-1/6  bg-red-500">
-                                    {/* LINE */}
-                                    <div>
-                                        {/* CIRCLE */}
-                                        <div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                {/* RIGHT */}
-                                <div className="w-1/3  bg-blue-200">
-                                    
-                                </div>
-
-                                {/* //SECOND// */}
-
-
-                                {/* LEFT */}
-                                <div className="">
-                                    
-                                    
-
-                                </div>
-                                {/* CENTRE */}
-                                <div>
-                                    {/* LINE */}
-                                    <div>
-                                        {/* CIRCLE */}
-                                        <div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                {/* RIGHT */}
-                                <div>
-                                <div>
-                                        Junior Software Developer 
-                                    </div>
-                                    <div>
-                                        My Current employment. Way better than the position before 
-                                    </div>
-                                    <div>
-                                        2024- Present
-                                    </div>
-                                    
-                                </div>
-
-
-                                {/* THIRD */}
-
-
-
-                                 {/* LEFT */}
-                                 <div className="">
-                                    
-                                    
-
-                                    </div>
-                                    {/* CENTRE */}
-                                    <div>
-                                        {/* LINE */}
-                                        <div>
-                                            {/* CIRCLE */}
-                                            <div>
-    
-                                            </div>
-    
-                                        </div>
-                                    </div>
-                                    {/* RIGHT */}
-                                    <div>
-                                    <div>
-                                            Junior Software Developer 
-                                        </div>
-                                        <div>
-                                            My Current employment. Way better than the position before 
-                                        </div>
-                                        <div>
-                                            2024- Present
-                                        </div>
-                                        
-                                    </div>
-
-
-
-                                
-
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 {/* SVG CONTAINER */}
-                <div className="hidden">
+                <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2" >
+                    <Brain scrollYProgress={scrollYProgress}/>
 
                 </div>
 
