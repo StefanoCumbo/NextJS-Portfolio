@@ -11,7 +11,7 @@ const items = [
     title: "React E-Commerce store",
     desc: " A full-stack eCommerce platform developed with React, MongoDB, Express.js, Node.js, and TypeScript. The application features secure JWT authentication, efficient global state management through React Context, and robust TypeScript interfaces for enhanced type safety and seamless API integration across user sessions and cart functionality.",
     img: "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    link: "",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const items = [
     title: "UEA Parking  Management System",
     desc: "Developed a parking management system using React, Node.js, Express.js, and MongoDB. The system featured a responsive UI with interactive charts and dynamic popups, RESTful APIs for real-time data, and secure data storage. It was optimized for high performance in a simulated cloud environment",
     img: "https://images.pexels.com/photos/395537/pexels-photo-395537.jpeg?auto=compress&cs=tinysrgb&w=600",
-    link: "https://lama.dev",
+    link: "",
   },
   
 ];
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-2 md:text-md lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-2 text-sm md:p-2 md:text-md lg:p-4 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">View Work</button>
                   </Link>
                 </div>
               </div>

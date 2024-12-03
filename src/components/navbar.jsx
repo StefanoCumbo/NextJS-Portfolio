@@ -9,10 +9,10 @@ import {motion} from "framer-motion"
 
 const links = [
 
-    {url: "/", title: "Home"},
-    {url: "/about", title:"About"},
-    {url: "/portfolio", title: "Portfolio"},
-    {url: "/contact", title: "Contact"}
+    {url: "/", title: "home"},
+    {url: "/about", title:"about"},
+    {url: "/portfolio", title: "portfolio"},
+    {url: "/contact", title: "contact"}
 
 ];
 
