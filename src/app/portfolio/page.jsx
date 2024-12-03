@@ -13,7 +13,14 @@ const items = [
     img: "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     link: "https://lama.dev",
   },
-  
+  {
+    id: 2,
+    color: "from-blue-300 to-purple-300",
+    title: "UEA Parking  Management System",
+    desc: "Developed a parking management system using React, Node.js, Express.js, and MongoDB. The system featured a responsive UI with interactive charts and dynamic popups, RESTful APIs for real-time data, and secure data storage. It was optimized for high performance in a simulated cloud environment",
+    img: "https://images.pexels.com/photos/395537/pexels-photo-395537.jpeg?auto=compress&cs=tinysrgb&w=600",
+    link: "https://lama.dev",
+  },
   
 ];
 
@@ -21,7 +28,7 @@ const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
 
   return (
     <motion.div
@@ -42,7 +49,7 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex flex-col m-20 text-white ">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl ">
                     {item.title}
                   </h1>
@@ -58,7 +65,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
-            <div className="h-screen w-screen flex items-center justify-center  bg-blue-300" />
+            <div className="h-screen w-screen flex items-center justify-center  bg-purple-300" />
 
           </motion.div>
         </div>

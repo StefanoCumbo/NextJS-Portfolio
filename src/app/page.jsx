@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import {motion} from "framer-motion"
+import Link from "next/link";
 const Homepage = () => {
   return (
   <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}}  transition={{duration:1.5 }}>
@@ -21,8 +22,14 @@ const Homepage = () => {
         portfolio showcases a diverse collection of projects that reflect my commitment to excellence
       </p>
       <div className="flex gap-4 w-full">
+        <Link href="/portfolio">
         <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white"> View my work</button>
+
+        </Link>
+        <Link href="/contact">
         <button className="p-4 rounded-xl ring-1 ring-black"> Contact me</button>
+
+        </Link>
       </div>
       
 
