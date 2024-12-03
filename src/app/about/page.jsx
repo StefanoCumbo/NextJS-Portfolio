@@ -38,7 +38,7 @@ const AboutPage = () => {
 </p>
 
 <p className="text-lg">
-    Throughout my studies and personal projects, I have developed a solid foundation in full-stack web development. My experience includes working on a range of projects such as a full-stack ecommerce store, a responsive portfolio website, and an AI-powered children's book generator. I have gained hands-on experience with React, MongoDB, Express.js, Node.js, and TypeScript, where I focused on building secure and scalable applications.
+    Throughout my studies and personal projects, I have developed a solid foundation in full-stack web development. My experience includes working on a range of projects such as a full-stack ecommerce store, a responsive portfolio website, and an AI-powered childrens book generator. I have gained hands-on experience with React, MongoDB, Express.js, Node.js, and TypeScript, where I focused on building secure and scalable applications.
 </p>
 
                        
