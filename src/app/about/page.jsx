@@ -1,6 +1,6 @@
 "use client";
 import Brain from "@/components/brain";
-import {easeInOut, motion, useInView, useScroll} from "framer-motion"
+import { motion, useInView, useScroll} from "framer-motion"
 import {useRef} from "react"
 const AboutPage = () => {
     const containerRef = useRef()
