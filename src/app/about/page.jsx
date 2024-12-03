@@ -19,14 +19,14 @@ const AboutPage = () => {
             {/* CONTAINER */}
             <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
                 {/* TEXT CONTAINER */}
-                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24  md:gap-32 lg:gap-48 xl:gap-64 lg:p-0   lg:w-2/3 xl:w-1/2">
+                <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24  md:gap-32 lg:gap-48 xl:gap-64    lg:w-2/3 xl:w-1/2">
                     {/* BIOGRAOHY CONTAINER */}
                     <div className="flex flex-col gap-10 justify-center">
                         {/* TITLE */}
                         <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
                         {/* DESCRIPTION */}
                         <p className="text-lg">
-    I am currently pursuing a four-year Master’s degree in Computer Science at the University of East Anglia, with a year-long exchange program at Deakin University in Melbourne, Australia. This experience has enriched my academic journey by exposing me to diverse learning environments and cultures, enhancing my adaptability and problem-solving skills.
+    I am currently pursuing a four-year Masters degree in Computer Science at the University of East Anglia, with a year-long exchange program at Deakin University in Melbourne, Australia. This experience has enriched my academic journey by exposing me to diverse learning environments and cultures, enhancing my adaptability and problem-solving skills.
 </p>
 
 <p className="text-lg">

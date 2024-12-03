@@ -37,6 +37,7 @@ const ContactPage = () => {
         },
         (error) => {
           toast.error("Something went wrong!");
+          console.log(error)
         },
       );
   };
