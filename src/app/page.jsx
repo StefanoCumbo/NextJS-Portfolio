@@ -18,7 +18,7 @@ const Homepage = () => {
         Welcome to my digital portfolio!
       </h1>
       <p className="md:text-xl">
-      In this project I have built a responsive portfolio website using Next.js, Tailwind CSS, and Framer Motion. I used the Framer Motion library to create animations with smooth animations and Tailwind CSS to create a responsive design that ensures an excellent viewing experience on any device.I have also showcased my previous projects which also highlight my programming competence.
+      In this project, I built a responsive portfolio website using Next.js, Tailwind CSS, and Framer Motion. Leveraging Framer Motion, I crafted smooth, engaging animations, while Tailwind CSS enabled a fully responsive design for an optimal viewing experience on any device. The portfolio highlights my previous projects, showcasing my programming expertise.
       </p>
       <div className="flex gap-4 w-full">
         <Link href="/portfolio">
