@@ -8,25 +8,25 @@ const Homepage = () => {
     <div className=" h-full flex flex-col lg:flex-row sm:px-8 md:px-12 lg:px-20 xl:px-48">
 
     {/* IMAGE CONTAINER */}
-    <div className="h-1/2 relative  lg:h-full lg:w-1/2">
+    <div className="h-1/2 relative xs:w-1-3 xs:h-1/3  lg:h-full lg:w-1/2">
       <Image src="/hero.png" alt ="" fill className="object-contain"></Image>
 
     </div>
     {/* TEXT CONTAINER */}
     <div className="h-1/2   lg:h-full lg:w-1/2   flex flex-col gap-8 justify-center items-center ">
-      <h1 className=" xs:text-lg  text-4xl font-bold md:text-5xl   ">
+      <h1 className=" xs:text-xl xs:mt-28  text-4xl font-bold md:text-5xl   ">
         Welcome to my digital portfolio!
       </h1>
-      <p className="md:text-xl">
-      For this project, I built a responsive portfolio website using Next.js, Tailwind CSS, and Framer Motion. Using Framer Motion, I was able to create smooth and engaging animations. Tailwind CSS allowed for a fully responsive layout, enabling functionality on any device. The portfolio showcases my previous projects and highlights the programming skills Ive developed so far.
+      <p className="  xs:p-4 md:text-xl">
+      For this project, I built a responsive portfolio website using Next.js, Tailwind CSS, and Framer Motion. Using Framer Motion, I was able to create smooth and engaging animations. Tailwind CSS allowed for a fully responsive layout, enabling functionality on any device. The portfolio showcases my previous projects and highlights the programming skills I have developed so far.
       </p>
-      <div className="flex gap-4 w-full">
+      <div className="flex gap-4 w-full items-center justify-center">
         <Link href="/portfolio">
         <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white"> View my work</button>
 
         </Link>
         <Link href="/contact">
-        <button className="p-4 rounded-xl ring-1 ring-black"> Contact me</button>
+        <button className="   p-4 rounded-xl ring-1 ring-black"> Contact me</button>
 
         </Link>
       </div>

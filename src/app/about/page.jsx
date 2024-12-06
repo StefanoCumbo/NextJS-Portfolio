@@ -93,7 +93,6 @@ const AboutPage = () => {
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Node.js </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Express.js </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">GraphQL </div>
-                            <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">SpringBoot </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Framer Motion </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Web Token </div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">FireBase </div>
