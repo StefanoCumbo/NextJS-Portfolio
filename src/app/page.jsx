@@ -17,10 +17,10 @@ const Homepage = () => {
       <h1 className=" xs:text-xl xs:mt-28  text-4xl font-bold md:text-5xl   ">
         Welcome to my digital portfolio!
       </h1>
-      <p className="  xs:p-4 md:text-xl">
+      <p className="  xs:p-10 md:text-xl">
        Hi im Stefano, a Full Stack Software Engineer from London, passionate about building innovative solutions and constantly improving.
       </p>
-      <div className="flex gap-4 w-full items-center justify-center">
+      <div className="flex mt-10 gap-4 w-full items-center justify-center">
         <Link href="/portfolio">
         <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white"> View my work</button>
 
