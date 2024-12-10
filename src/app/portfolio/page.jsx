@@ -32,21 +32,21 @@ const PortfolioPage = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="h-full  "
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
+      <div className="h-[600vh] relativ " ref={ref}>
         <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
           My Works
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden ">
           <motion.div style={{ x }} className="flex  ">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300  dark:dark-gradient-bg  " />
             {items.map((item) => (
               <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
+                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}  dark:dark-gradient-bg  `}
                 key={item.id}
               >
                 <div className="flex flex-col m-20 text-white ">
@@ -65,12 +65,12 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
-            <div className="h-screen w-screen flex items-center justify-center  bg-purple-300" />
+            <div className="h-screen w-screen flex items-center justify-center  bg-purple-300 dark:dark-gradient-bg" />
 
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center dark:dark-gradient-bg ">
         <h1 className="text-8xl">Do you have a project?</h1>
         <div className="relative">
           <motion.svg

@@ -45,8 +45,8 @@ const ContactPage = () => {
   const text = "Say Hello";
 
   return (
-    <motion.div className="h-full overflow-scroll" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1.5 }}>
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <motion.div className="h-full overflow-scroll " initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1.5 }}>
+      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 ">
         {/* Text container */}
         <div className=" xs:flex xs:flex-col xs:m-20 xs:text-2xl h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center lg:text-6xl xl:text-6xl  ">
           <div>
@@ -59,7 +59,8 @@ const ContactPage = () => {
           </div>
         </div>
         {/* Form container */}
-        <form onSubmit={sendEmail} ref={form} className=" xs:h-full xs:w-full   h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+        <form onSubmit={sendEmail} ref={form} className=" xs:h-full xs:w-full   h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24
+          dark:dark-gradient-bg">
           <span>Dear Stefano Cumbo,</span>
           <textarea
             rows={6}

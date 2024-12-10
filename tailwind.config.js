@@ -7,15 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        xs: '300px', // Custom breakpoint for smaller screens
-      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      colors: {
+        'dark-gradient-start': '#1a1a1a',
+        'dark-gradient-end': '#333333',
       },
     },
   },
+  darkMode: 'class', // or 'media'
   plugins: [],
 };

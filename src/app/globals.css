@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+    .dark-gradient-bg {
+        @apply bg-gradient-radial from-dark-gradient-start via-gray-800 to-dark-gradient-end;
+      }
+    
+}
+
+
+
+
