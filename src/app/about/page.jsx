@@ -25,7 +25,7 @@ const AboutPage = () => {
                     {/* BIOGRAPHY CONTAINER */}
                     <div className="flex flex-col gap-10 justify-center">
                         {/* TITLE */}
-                        <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
+                        <h1 className="font-bold text-2xl transition-transform duration-300 hover:scale-110">BIOGRAPHY</h1>
                         
                         {/* BIOGRAPHY BOXES - MODERN STYLE */}
                         <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6">
@@ -173,15 +173,14 @@ const AboutPage = () => {
                         <motion.h1 
                             initial={{x: "-300px"}} 
                             animate={isSkillRefInView ? {x: "0"} : {x:"-300"}} 
-                            className="font-bold text-2xl"
+                            className="font-bold text-2xl "
                         >
                             SKILLS
                         </motion.h1>
 
                         {/* SKILL LIST */}
-                        <motion.div 
-                            initial={{x: "-300px"}} 
-                            animate={isSkillRefInView ? {x: "0"} : {x:"-300"}}
+                        <div 
+                            
                             className="flex gap-4 flex-wrap pb-40 "
                         >
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">Javascript</div>
@@ -199,7 +198,7 @@ const AboutPage = () => {
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">AWS</div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">PostreSQL</div>
                             <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">mySQL</div>
-                        </motion.div>
+                        </div>
                     </div>
                     
                     

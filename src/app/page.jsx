@@ -9,7 +9,7 @@ const Homepage = () => {
     
 
     {/* IMAGE CONTAINER */}
-    <div className="h-1/2 relative xs:w-full xs:h-1/4 lg:h-full lg:w-1/2 flex items-center justify-center">
+  <div className="h-1/2 relative xs:w-full xs:h-1/4 lg:h-full lg:w-1/2 flex items-center justify-center">
   <div className="relative xs:w-48 xs:h-48 xs:mt-10 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 border-white shadow-lg">
     <Image
       src="/portfolio-img.jpg"
@@ -27,7 +27,7 @@ const Homepage = () => {
     
     {/* TEXT CONTAINER */}
     <div className="h-1/2   lg:h-full lg:w-1/2   flex flex-col gap-8 justify-center items-center ">
-      <h1 className=" xs:text-xl xs:mt-20 xs:pt-20 ms:pl-5 text-4xl font-bold md:text-5xl   ">
+      <h1 className=" xs:text-xl xs:mt-20 xs:pt-20 ms:pl-5 text-4xl font-bold md:text-5xl transition-transform duration-300 hover:scale-110  ">
         Welcome to my digital portfolio!
       </h1>
 
@@ -40,11 +40,11 @@ const Homepage = () => {
      
       <div className="flex mt-5 gap-4 w-full items-center justify-center">
         <Link href="/portfolio">
-        <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white"> View my work</button>
+        <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white transition-transform duration-300 hover:scale-110"> View my work</button>
 
         </Link>
         <Link href="/contact">
-        <button className="   p-4 rounded-xl ring-1 ring-black"> Contact me</button>
+        <button className="   p-4 rounded-xl ring-1 ring-black transition-transform duration-300 hover:scale-110"> Contact me</button>
 
         </Link>
       </div>
