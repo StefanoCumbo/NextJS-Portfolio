@@ -71,7 +71,7 @@ const AboutPage = () => {
                             >
                                 <h3 className="text-lg font-semibold mb-3">Project Experience</h3>
                                 <p className="text-gray-700">
-                                    Portfolio includes full-stack ecommerce store, responsive portfolio website, and AI-powered children's book generator. Focused on building secure and scalable applications with React, MongoDB, Express.js, Node.js, and TypeScript.
+                                    Portfolio includes full stack ecommerce store, responsive portfolio website, and AI-powered childrens book generator. Focused on building secure and scalable applications with React, MongoDB, Express.js, Node.js, and TypeScript.
                                 </p>
 
 
