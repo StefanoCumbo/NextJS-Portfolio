@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from 'next/image'
 import NavLink from "./navLink";
 import {motion} from "framer-motion"

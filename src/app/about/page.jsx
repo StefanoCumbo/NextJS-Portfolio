@@ -1,5 +1,5 @@
 "use client";
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion, useInView} from "framer-motion";
 import { useRef } from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +7,6 @@ import { faSchool, faBrain,faCode } from '@fortawesome/free-solid-svg-icons';
 
 const AboutPage = () => {
     const containerRef = useRef();
-    const { scrollYProgress } = useScroll({ container: containerRef });
 
     const skillRef = useRef();
     const isSkillRefInView = useInView(skillRef, { once: true, margin: "-100px" });

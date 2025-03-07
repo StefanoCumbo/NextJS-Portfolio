@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "./navbar";
-import {delay, motion} from "framer-motion"
+import {motion} from "framer-motion"
 
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
