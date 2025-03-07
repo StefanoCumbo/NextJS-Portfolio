@@ -38,7 +38,7 @@ const Homepage = () => {
 
       </div>
      
-      <div className="flex mt-10 gap-4 w-full items-center justify-center">
+      <div className="flex mt-5 gap-4 w-full items-center justify-center">
         <Link href="/portfolio">
         <button className="p-4 rounded-xl ring-1 ring-black bg-black text-white"> View my work</button>
 

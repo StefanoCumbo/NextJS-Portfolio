@@ -13,13 +13,13 @@ const AboutPage = () => {
 
     return (
         <motion.div 
-            className="h-full"
+            className="h-full overflow-scroll"
             initial={{ y: "-200vh" }}
             animate={{ y: "0%" }}
             transition={{ duration: 1.5 }}
         >
             {/* CONTAINER */}
-            <div className="h-full overflow-scroll" ref={containerRef}>
+            <div className="" ref={containerRef}>
                 {/* TEXT CONTAINER - Now full-width */}
                 <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 w-full max-w-6xl mx-auto">
                     {/* BIOGRAPHY CONTAINER */}
@@ -36,7 +36,11 @@ const AboutPage = () => {
                                 transition={{ duration: 0.5 }}
                                 className="bg-white  p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
                             >
-                                <h3 className="text-lg font-semibold mb-3">Education</h3>
+                                <h3 className="text-lg font-semibold mb-3">Education
+                                <FontAwesomeIcon className=" ml-5 text-xl" icon={faSchool} />
+
+
+                                </h3>
                                 <p className="text-gray-700">
                                     Masters in Computer Science at University of East Anglia, with a year-long exchange at Deakin University in Melbourne, Australia. This diverse experience has enhanced my adaptability and problem-solving skills.
                                 </p>
@@ -53,10 +57,15 @@ const AboutPage = () => {
                                 transition={{ duration: 0.5, delay: 0.1 }}
                                 className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
                             >
-                                <h3 className="text-lg font-semibold mb-3">Passion</h3>
+                                <h3 className="text-lg font-semibold mb-3">Passion
+                                <FontAwesomeIcon className=" ml-5 text-xl" icon={faBrain} />
+
+                                </h3>
                                 <p className="text-gray-700">
                                     Web development enthusiast focused on building innovative, user-centric applications with Next.js, React.js, TypeScript, and CSS, as well as back-end technologies like MongoDB and MySQL.
+
                                 </p>
+
                             </motion.div>
 
 
@@ -67,11 +76,14 @@ const AboutPage = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow"
+                                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow "
                             >
-                                <h3 className="text-lg font-semibold mb-3">Project Experience</h3>
+                                <h3 className="text-lg font-semibold mb-3">Projects
+                                <FontAwesomeIcon className=" ml-5 text-xl" icon={faCode} />
+
+                                </h3>
                                 <p className="text-gray-700">
-                                    Portfolio includes full stack ecommerce store, responsive portfolio website, and AI-powered childrens book generator. Focused on building secure and scalable applications with React, MongoDB, Express.js, Node.js, and TypeScript.
+                                    My Portfolio includes full stack ecommerce store, responsive portfolio website, and AI-powered childrens book generator. Focused on building secure and scalable applications with React, MongoDB, Express.js, Node.js, and TypeScript.
                                 </p>
 
 
@@ -85,7 +97,7 @@ const AboutPage = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
-                                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center"
+                                className="hidden sm:flex bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow  items-center justify-center"
                             >
                                <FontAwesomeIcon className="text-8xl" icon={faSchool} />
 
@@ -96,7 +108,7 @@ const AboutPage = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
-                                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center"
+                                className="hidden sm:flex bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow  items-center justify-center "
                             >
                                <FontAwesomeIcon className="text-8xl" icon={faBrain} />
 
@@ -108,7 +120,7 @@ const AboutPage = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
-                                className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow flex items-center justify-center"
+                                className=" hidden sm:flex bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-xl transition-shadow  items-center justify-center "
                             >
                                <FontAwesomeIcon className="text-8xl" icon={faCode} />
 
