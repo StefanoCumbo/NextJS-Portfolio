@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` scroll-smooth ${inter.className} `}>
+      <body className={`overscroll-none-y overflow-x-hidden scroll-smooth ${inter.className} `}>
       
         <ThemeProvider attribute="class">
            <ToastContainer /> 
