@@ -12,7 +12,7 @@ const Homepage = () => {
   <div className="h-1/2 relative xs:w-full xs:h-1/4 lg:h-full lg:w-1/2 flex items-center justify-center">
   <div className="relative xs:w-48 xs:h-48 xs:mt-10 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[450px] xl:h-[450px] rounded-full overflow-hidden border-4 border-white shadow-lg">
     <Image
-      src="/portfolio-img.jpg"
+      src="/stefano4.jpg"
       alt="Stefano portrait"
       fill
       className="object-cover transition-all duration-500 ease-in-out hover:brightness-110"
