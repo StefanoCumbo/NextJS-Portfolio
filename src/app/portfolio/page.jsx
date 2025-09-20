@@ -1,6 +1,6 @@
 
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { color, motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -17,18 +17,26 @@ const items = [
   {
     id: 2,
     color: "from-blue-300 to-purple-300",
-    title: "UEA Parking  Management System",
+    title: "UEA Parking  Management",
     desc: "Developed a parking management system using React, Node.js, Express.js, and MongoDB. The system featured a responsive UI with interactive charts and dynamic popups, RESTful APIs for real-time data, and secure data storage. It was optimized for high performance in a simulated cloud environment",
     img: "https://images.pexels.com/photos/395537/pexels-photo-395537.jpeg?auto=compress&cs=tinysrgb&w=600",
     link: "https://stef-dev-parking-uea.netlify.app/",
   },
-];
 
+  {
+    id: 3,
+    color: "from-purple-300 to-red-200",
+    title: "Children's StoryTeller Ai",
+    desc: "An AI-powered storytelling app built with Next.js, Python, and GPTScript to generate personalized stories and images. Features live progress updates during AI generation using the ReadableStream API and Server-Sent Events. Responsive React components were developed with TypeScript and Tailwind CSS, incorporating dynamic state management and error handling for a seamless user experience.",
+    img: "https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg",
+    link: "https://screenrec.com/share/LuC2nEzWdS"
+  }
+];
 const PortfolioPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"], { clamp: false });
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-65%"], { clamp: false });
 
   return (
     <motion.div
@@ -56,7 +64,7 @@ const PortfolioPage = () => {
                   <div className="relative w-80 h-56 md:w-64 md:h-48 lg:w-80 lg:h-60 xl:w-96 xl:h-72">
                     <Image src={item.img} alt="" fill />
                   </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                  <p className="m-6 w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px] ">
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
