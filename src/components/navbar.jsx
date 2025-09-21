@@ -11,7 +11,7 @@ import { useTheme } from "next-themes";
 const links = [
 
     {url: "/", title: "home"},
-    {url: "/about", title:"about"},
+    // {url: "/about", title:"about"},
     {url: "/portfolio", title: "portfolio"},
     {url: "/contact", title: "contact"}
 

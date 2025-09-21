@@ -2,9 +2,10 @@
 import Image from "next/image";
 import {motion} from "framer-motion"
 import Link from "next/link";
+import AboutPage from "./about/page";
 const Homepage = () => {
   return (
-  <motion.div className="h-full overflow-hidden" initial={{y:"-200vh"}} animate={{y:"0%"}}  transition={{duration:1.5 }}>
+  <motion.div className="h-full overflow-y-auto" initial={{y:"-200vh"}} animate={{y:"0%"}}  transition={{duration:1.5 }}>
     <div className=" h-full flex flex-col lg:flex-row sm:px-8 md:px-12 lg:px-20 xl:px-48  ">
     
 
@@ -53,6 +54,10 @@ const Homepage = () => {
     </div>
 
     </div>
+    <section>
+      <AboutPage/>
+
+    </section>
   </motion.div>)
  
   
